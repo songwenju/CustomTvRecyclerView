@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/arr_left"
+        android:layout_width="120dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/arr_left_button"
+        android:visibility="invisible"/>
+
+
+    <com.songwenju.customtvrecyclerview.CustomRecyclerView
+        android:id="@+id/id_recycler_view"
+        android:layout_width="@dimen/total_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/arr_left"
+        android:background="#0000ff00"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="true"/>
+
+
+    <Button
+        android:id="@+id/arr_right"
+        android:layout_width="120dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/id_recycler_view"
+        android:background="@drawable/arr_right_button"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
