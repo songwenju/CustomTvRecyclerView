@@ -2,9 +2,6 @@
 
 下面是效果图：
 
-![image](https://github.com/songwenju/CustomTvRecyclerView/blob/master/raw/master/screenshots/img.png)
-
-gif图：
 ![image](https://github.com/songwenju/CustomTvRecyclerView/blob/master/raw/master/screenshots/tvRecycler.gif)
 
 封装了RecyclerView实现了一下一些功能:
