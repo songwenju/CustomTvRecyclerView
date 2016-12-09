@@ -5,7 +5,7 @@
 
 ![img.png](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/img.jpg)
 
-![tvRecycler.gif](http://upload-images.jianshu.io/upload_images/1927803-8d85c450c8aba2fd.gif?imageMogr2/auto-orient/strip)
+![tvRecycler.gif](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/tvRecycler.gif)
 
 
 
