@@ -1,6 +1,7 @@
-####这是一个针对Android Tv Launcher页的recyclerView####
+这是一个针对Android Tv Launcher页的recyclerView
 
 下面是效果图：
+
 
 ![img.png](http://upload-images.jianshu.io/upload_images/1927803-9a2ddef795b6cd00.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
