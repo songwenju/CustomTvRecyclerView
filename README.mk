@@ -3,10 +3,10 @@
 下面是效果图：
 
 
-![image](https://github.com/songwenju/CustomTvRecyclerView/blob/master/raw/master/screenshots/img.png)
+! [ image ](https://github.com/songwenju/CustomTvRecyclerView/blob/master/raw/master/screenshots/img.png)
 
 gif图：
-![image](https://github.com/songwenju/CustomTvRecyclerView/blob/master/raw/master/screenshots/tvRecycler.gif)
+! [ image ](https://github.com/songwenju/CustomTvRecyclerView/blob/master/raw/master/screenshots/tvRecycler.gif)
 
 封装了RecyclerView实现了一下一些功能:
 1.响应五向键，按下五向键的上下左右会跟着移动，并获得焦点，在获得焦点时会抬高
