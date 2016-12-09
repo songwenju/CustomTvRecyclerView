@@ -3,7 +3,7 @@
 下面是效果图：
 
 
-![img.png](http://upload-images.jianshu.io/upload_images/1927803-9a2ddef795b6cd00.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![img.png](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/img.jpg)
 
 ![tvRecycler.gif](http://upload-images.jianshu.io/upload_images/1927803-8d85c450c8aba2fd.gif?imageMogr2/auto-orient/strip)
 
