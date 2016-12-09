@@ -1,4 +1,4 @@
-#这是一个针对Android Tv Launcher页的recyclerView
+##这是一个针对Android Tv Launcher页的recyclerView##
 
 封装了RecyclerView实现了一下一些功能:
  1.响应五向键，按下五向键的上下左右会跟着移动，并获得焦点，在获得焦点时会抬高
