@@ -7,7 +7,6 @@
 gif图：
 ![image](https://github.com/songwenju/CustomTvRecyclerView/blob/master/raw/master/screenshots/tvRecycler.gif)
 
-![image](http://upload-images.jianshu.io/upload_images/1927803-8d85c450c8aba2fd.gif?imageMogr2/auto-orient/strip)
 封装了RecyclerView实现了一下一些功能:
 1.响应五向键，按下五向键的上下左右会跟着移动，并获得焦点，在获得焦点时会抬高
 2.在鼠标hover在条目上时会获得焦点。
