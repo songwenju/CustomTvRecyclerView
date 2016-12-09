@@ -5,8 +5,8 @@
 
 ![img.png](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/img.jpg)
 
+gif图：
 ![tvRecycler.gif](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/tvRecycler.gif)
-
 
 
 封装了RecyclerView实现了一下一些功能:
