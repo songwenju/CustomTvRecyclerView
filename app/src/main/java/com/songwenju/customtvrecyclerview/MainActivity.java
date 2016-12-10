@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mRightArr;
     private int totalWidth;
     private StaggeredGridLayoutManager mLayoutManager;
-    public static final int LINE_NUM = 3;
+    public static final int LINE_NUM = 3;  //要显示的行数
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initData() {
         totalWidth = getResources().getDimensionPixelSize(R.dimen.total_width);
         mData = new ArrayList<Integer>();
-        for (int i = 0; i < 28; i++) {
+        for (int i = 0; i < 35; i++) {
             mData.add(i);
         }
         if (mData.size() > 0 && !mRecyclerView.isLastItemVisible(LINE_NUM, mData.size())) {
@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     LogUtil.i(this, "MainActivity.onClick.smoothScrollBy-----" + -totalWidth);
                     mRecyclerView.smoothScrollBy(-totalWidth, 0);
                 }
-//                setLeftArrStatus();
                 break;
             case R.id.arr_right:
                 LogUtil.i(this, "MainActivity.onClick.rightArr");

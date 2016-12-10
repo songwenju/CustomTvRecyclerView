@@ -56,14 +56,14 @@ public class CustomRecyclerView extends RecyclerView {
             //处理左右方向键移动Item到边之后RecyclerView跟着移动
             switch (event.getKeyCode()) {
                 case KeyEvent.KEYCODE_DPAD_RIGHT:
-                    LogUtil.i(this,"CustomRecyclerView.KEYCODE_DPAD_RIGHT.");
+                    LogUtil.i(this, "CustomRecyclerView.KEYCODE_DPAD_RIGHT.");
                     if (event.getAction() == KeyEvent.ACTION_UP) {
                         return true;
                     } else {
                         View rightView = FocusFinder.getInstance().findNextFocus(this, focusView, View.FOCUS_RIGHT);
                         LogUtil.i(this, "rightView is null:" + (rightView == null));
                         if (rightView != null) {
-                            LogUtil.i(this,"CustomRecyclerView.requestFocusFromTouch.");
+                            LogUtil.i(this, "CustomRecyclerView.requestFocusFromTouch.");
                             rightView.requestFocusFromTouch();
                             return true;
                         } else {
@@ -93,7 +93,7 @@ public class CustomRecyclerView extends RecyclerView {
 
     @Override
     public void onScrolled(int dx, int dy) {
-        LogUtil.i(this,"CustomRecyclerView.onScrolled.");
+        LogUtil.i(this, "CustomRecyclerView.onScrolled.");
         super.onScrolled(dx, dy);
         //响应五向键，在Scroll时去获得下一个焦点
         final View focusView = this.getFocusedChild();
@@ -148,6 +148,9 @@ public class CustomRecyclerView extends RecyclerView {
             lastVisibleItems = ((StaggeredGridLayoutManager) layoutManager).findLastCompletelyVisibleItemPositions(lastVisibleItems);
             int position = lastVisibleItems[0];
             LogUtil.i(this, "lastVisiblePosition:" + position);
+            for (int i = 0; i < lastVisibleItems.length; i++) {
+                LogUtil.i(this, "order:"+i +"----->last position:" + lastVisibleItems[i]);
+            }
             boolean isVisible = position >= (allItemNum - lineNum);
             if (isVisible) {
                 scrollBy(1, 0);
