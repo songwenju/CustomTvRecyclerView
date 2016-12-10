@@ -148,9 +148,9 @@ public class CustomRecyclerView extends RecyclerView {
             lastVisibleItems = ((StaggeredGridLayoutManager) layoutManager).findLastCompletelyVisibleItemPositions(lastVisibleItems);
             int position = lastVisibleItems[0];
             LogUtil.i(this, "lastVisiblePosition:" + position);
-            for (int i = 0; i < lastVisibleItems.length; i++) {
-                LogUtil.i(this, "order:"+i +"----->last position:" + lastVisibleItems[i]);
-            }
+//            for (int i = 0; i < lastVisibleItems.length; i++) {
+//                LogUtil.i(this, "order:"+i +"----->last position:" + lastVisibleItems[i]);
+//            }
             boolean isVisible = position >= (allItemNum - lineNum);
             if (isVisible) {
                 scrollBy(1, 0);
@@ -171,7 +171,8 @@ public class CustomRecyclerView extends RecyclerView {
      */
     public static abstract class CustomAdapter<T> extends Adapter<ViewHolder> {
         private LayoutInflater mInflater;
-        private List<T> mData;
+        protected List<T> mData;
+        protected Context mContext;
 
         public interface OnItemClickListener {
             void onItemClick(View view, int position);
@@ -188,7 +189,8 @@ public class CustomRecyclerView extends RecyclerView {
 
 
         public CustomAdapter(Context context, List<T> data) {
-            mInflater = LayoutInflater.from(context);
+            mContext = context;
+            mInflater = LayoutInflater.from(mContext);
             mData = data;
         }
 
