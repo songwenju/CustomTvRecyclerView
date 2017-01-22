@@ -8,4 +8,7 @@
     <dimen name="default_img_height">230dp</dimen>
     <dimen name="margin">12dp</dimen>
     <dimen name="total_width">1656dp</dimen>
+
+    <dimen name="recycler_total_width">1656dp</dimen>
+    <dimen name="recycler_item_width">414dp</dimen>
 </resources>

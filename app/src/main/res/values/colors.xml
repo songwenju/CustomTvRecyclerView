@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="dialog_text">#333333</color>
+    <color name="vod_category_text_color_normal">#f6773c</color>
+    <color name="orange">#f97f46</color>
+    <color name="common_white">#ffffff</color>
 </resources>

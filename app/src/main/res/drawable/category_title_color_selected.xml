@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_selected="true" android:color="#f6773c" />
+
+	<item android:state_focused="true" android:color="#f6773c" />
+
+	<item android:state_pressed="true" android:color="#f6773c" />
+
+	<item android:color="@color/vod_category_text_color_normal" />
+</selector>
