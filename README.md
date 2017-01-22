@@ -3,6 +3,8 @@
 ####CustomTvRecyclerView 2.0
 下面是效果图：
 ![image](https://github.com/songwenju/CustomTvRecyclerView/blob/master/raw/master/screenshots/tvRecycler2.0.gif)
+
+
 该版本添加和修复的以下功能：
 1.添加了垂直的RecyclerView，并实现了可以控制横向recyclerView的效果  
 2.左右箭头点击后RecyclerView的条目不会获得焦点，解决了滑动冲突。  
@@ -10,9 +12,9 @@
 4.在RecyclerView内部不再提供类似于放大抬高z轴的操作，这里只提供了focus状态的接口，具体的逻辑在RecyclerView使用处提供回调。  
 
 对应的博客地址：http://www.jianshu.com/p/f02bce783434
- 
+  
 
-
+***
 ####CustomTvRecyclerView 1.0
 下面是效果图：
 
