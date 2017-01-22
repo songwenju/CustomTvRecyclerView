@@ -2,6 +2,7 @@
 
 ####CustomTvRecyclerView 2.0
 下面是效果图：
+
 ![image](https://github.com/songwenju/CustomTvRecyclerView/blob/master/raw/master/screenshots/tvRecycler2.0.gif)
 
 
