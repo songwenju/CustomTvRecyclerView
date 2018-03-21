@@ -1,0 +1,41 @@
+<LinearLayout android:id="@+id/layout_dialog"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+        <com.songwenju.customtvrecyclerview.widget.FocusVerticalLinearLayout
+            android:id="@+id/layout_video_call"
+            style="@style/dialog_item_layout"
+            android:layout_marginLeft="800dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                style="@style/dialog_img"
+                android:src="@drawable/video"/>
+
+            <TextView
+                style="@style/dialog_item_text"
+                android:text="视频通话"/>
+        </com.songwenju.customtvrecyclerview.widget.FocusVerticalLinearLayout>
+
+        <com.songwenju.customtvrecyclerview.widget.FocusVerticalLinearLayout
+            android:id="@+id/layout_video_call2"
+            style="@style/dialog_item_layout"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/layout_video_call">
+
+            <ImageView
+                style="@style/dialog_img"
+                android:src="@drawable/video"/>
+
+            <TextView
+                style="@style/dialog_item_text"
+                android:text="视频通话"/>
+        </com.songwenju.customtvrecyclerview.widget.FocusVerticalLinearLayout>
+
+
+</LinearLayout>

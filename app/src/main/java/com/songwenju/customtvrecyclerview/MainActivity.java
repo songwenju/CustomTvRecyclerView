@@ -3,12 +3,14 @@ package com.songwenju.customtvrecyclerview;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -21,7 +23,9 @@ import com.songwenju.customtvrecyclerview.adapter.HomeTvAdapter;
 import com.songwenju.customtvrecyclerview.adapter.PopRecyclerAdapter;
 import com.songwenju.customtvrecyclerview.util.LogUtil;
 import com.songwenju.customtvrecyclerview.util.SpUtil;
+import com.songwenju.customtvrecyclerview.util.UIUtil;
 import com.songwenju.customtvrecyclerview.widget.CustomRecyclerView;
+import com.songwenju.customtvrecyclerview.widget.CustomDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,7 +85,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 
 
-
         //init popWindow
         View popupView = getLayoutInflater().inflate(R.layout.list_menu_popwindow, null, false);
         mPopRecyclerView = (CustomRecyclerView) popupView.findViewById(R.id.recycler_view);
@@ -103,6 +106,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mRecyclerView.setOnScrollListener(new MyOnScrollListener()
 
         );
+    }
+
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_MENU:
+                LogUtil.i(this, "MainActivity.onKeyUp.KEYCODE_MENU");
+                Drawable backBlurDrawable = UIUtil.getBackBlurDrawable(mContext, 25f);
+                final CustomDialog customDialog = new CustomDialog(mContext, R.style.DialogStyle);
+                customDialog.setBackground(backBlurDrawable);
+                customDialog.setCallBackListen(new CustomDialog.OnCallResult() {
+                    @Override
+                    public void onOkBtnClick() {
+                        customDialog.dismiss();
+                    }
+
+                    @Override
+                    public void onCancelBtnClick() {
+                        LogUtil.i(this, "MainActivity.onCancelBtnClick.");
+                        customDialog.dismiss();
+
+                    }
+                });
+                customDialog.show();
+                return true;
+
+            default:
+                break;
+        }
+        return super.onKeyUp(keyCode, event);
     }
 
     private void initData() {
